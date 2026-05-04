@@ -5,4 +5,5 @@ Merge(Weapon, {
 	NLF_LCI = L"Linear Cos Impact Missile",
 	SBP_EBS = L"Explosive Barrel Spawner",
 	SBP_EBF = L"Explosive Barrel Filler",
+	BDL = L"Burst Double Laser",
 })

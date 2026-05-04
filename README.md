@@ -38,6 +38,16 @@ Two weapons which can place explosive barrels in the hitted structure, one place
 
 2. Enum all links in a structure. And randomly select a expected link with the linear complexity worst.
 
+### BurstDoubleLaser
+
+Shows how to make use of round vars to double laser's damage without increasing its bracing kill threshold(destroy all links whose health is below the currect damage on its ray).
+
+#### Main Mechanism
+
+1. How `RoundsEachBurst`, `RoundPeriod` works for laser weapons.
+
+2. Use `ProjectileAngle` to infer the actual time since fire.
+
 ---
 
 > 这是一个 Forts "高级代码"集合，综合运用了 Forts 机制实现各种功能，并提供了可直接在游戏中验证的具体实现样例（只需将其作为模组加载即可）。
@@ -73,3 +83,13 @@ Two weapons which can place explosive barrels in the hitted structure, one place
 1. 在动态脚本中放置装置
 
 2. 枚举结构所有连接，最坏线性复杂度地随机选取可用连接
+
+### BurstDoubleLaser
+
+展示如何利用与连发有关的变量来使激光的伤害翻倍，而不提高其"斩杀线"(摧毁射线上所有生命值低于当前瞬时伤害的材料)。
+
+#### 主要机制
+
+1. 对激光武器利用 `RoundsEachBurst`, `RoundPeriod`
+
+2. 使用 `ProjectileAngle` 推知自发射以来的具体时间
